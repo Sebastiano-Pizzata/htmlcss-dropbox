@@ -143,5 +143,57 @@ header nav > div ul a{
     border: 1px solid lightgrey;
 }
 
+.plan__card--top{
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.plan__card--top,
+.plan__card--bottom{
+   padding: 10px;
+}
+
+.plan__card--bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plan__card--bottom hr{
+    width: 20%;
+    border: 1px solid lightgrey;
+}
+
+.plan__card--bottom .fa-check{
+    color: var(--color-btn);
+}
+
+.plan__card--bottom ul li{
+    text-indent: 0,8rem;
+    font-size: 12px;
+}
+
+.plan__card--bottom ul li i{
+    margin-right: 5px;
+
+}
+
+.plan__card--bottom .diagonal{
+    display: flex;
+    align-items: flex-start;
+}
 
 
+#contact__partners{
+    display: flex;
+
+   
+}
+
+.contact__partner{
+    flex-basis: calc(100% - 2);
+}
+
+.btn--white{
+    border-color: 1px solid black;
+}
