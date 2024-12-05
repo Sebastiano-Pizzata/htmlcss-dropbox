@@ -1,74 +1,147 @@
-header{
-    background-color: white;
-    margin-bottom: 10px;
-    /* position: sticky; */
-    }
+:root{
+    --color-btn: #0161ff;
+    --color-jumbo:#b4d0e7;
 
-.flex-1{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
 }
 
-ul{
+
+header{
+    padding: 15px;
+}
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header nav > div ul{
     display: flex;
     gap: 10px;
 }
 
-li a{
+header nav > div ul a{
     color: black;
-    font-size: 13px;
 }
 
-button{
-    border-color: none;
-    background-color: blue;
+.btn{
+    padding: 5px 15px;
+
+}
+
+.btn--blue{
+    background-color: var(--color-btn);
     color: white;
-    font-size: 13px;
-    width: 50px;
+
 }
 
-#container-80{
+.jumbotron{
+    /* background-color: var(--color-jumbo); */
+    padding: 20px 0;
+    background: linear-gradient(#b4d0e6 90%, #fff 10%);
+}
+
+.jumbotron h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.container-90{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.jumbotron__info{
+    display: flex;
+    align-items: flex-start;
+}
+
+.jumbotron__text{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.jumbotron__text a{
+    width: 60%;
+ }
+
+.jumbotron__text i{
+   font-size: 3rem;
+}
+
+.jumbotron__img{
+    flex-basis: 70%;
+}
+.jumbotron__img img{
+    width: 100%;
+}
+
+.container-80{
     width: 80%;
     margin: 0 auto;
 }
 
-.container{
+.plan__circles{
     display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.plan__circle{
+    height: 10px;
+    aspect-ratio: 1;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+
+}
+
+.plan__choice{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#plan h2{
+    margin-bottom: 20px;
+}
+
+.plan__circle--check{
+    border-color:var(--color-btn);
+}
+
+#plan__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#plan__cards > div{
+    flex-grow: 1;
+    flex-basis: calc(100% /3 - 10px);
    
-
-
 }
 
-
-section{
-    background-color: aqua;
-}
-
-h1{
-    font-size: 50px;
-    padding-bottom: 10px;
-    text-align: center;
+#plan__cards > div:last-child{
+    flex-basis: 100%;
     
+   
 }
 
-.text-1{
-    padding-block: 15px;
-    font-size: 12px;
+.plan__card{
+    border: 1px solid lightgrey;
 }
 
-.btn__1{
-    width: 150px;
-    height: 30px;
-    background-color: blue;
-    border: none;
-}
 
-.img__1{
-    position: relative;
-}
 
-/* .jumbo{
-    position: absolute;
-    bottom: -200px;
-} */

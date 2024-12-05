@@ -5,38 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>htmlcss-dropbox</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <link rel="stylesheet" href="./css/reset.css">
 
-<!-- <link rel="stylesheet" href="/css/debug.css"> -->
+<link rel="stylesheet" href="./css/debug.css">
 
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
 
     <header>
-        <nav class="flex-1">
+        <nav>
+           <div> 
             <figure>
-                <img width="100px" src="./img/assets-2/img/logo-small.png" alt="logo">
+                <img src="./img/assets-2/img/logo-small.png" alt="logo">
             </figure>
-            
-                <ul>
-                    <li><a href="link">Perchè Dropbox</a></li>
-                    <li><a href="link">Funzioni</a></li>
-                    <li><a href="link">Piani e Prezzi</a></li>
+                 <ul>
+                    <li><a href="">Perchè Dropbox</a></li>
+                    <li><a href="">Funzioni</a></li>
+                    <li><a href="">Piani e Prezzi</a></li>
                 </ul>
-            
-
-           
+            </div>
+           <div>
                 <ul>
-                <li><a href="link">Supporto</a></li>
-                <li><a href="link">Contatta l'ufficio vendite</a></li>
-                <li><a href="link">accedi</a></li>
-            </ul>
-            <button>
-                Inizia
-            </button>
-             </nav>
+                <li><a href="">Supporto</a></li>
+                <li><a href="">Contatta l'ufficio vendite</a></li>
+                <li><a href="">accedi</a></li>
+                <li><a class="btn btn--blue" href="">Inizia</a></li>
+               </ul>
+         </div>
+            </nav>
     </header>
 
 
@@ -44,28 +44,47 @@
 
     <main >
        
-        <section> 
-            <div id="container-80">
-            <h1>Tutto quello che ti serve per il lavoro, in un unico posto</h1>
-           <div class="container">
-            
-            <div class="text">
-                
-                <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus soluta et fugit eum eveniet sapiente vel quia, fuga exercitationem quasi necessitatibus, sequi dolorem facilis, eos non ratione quos ducimus?</p>
-            <button class="btn__1">Inizia la prova gratuita</button>
-            <p class="text-1">Annulla in qualsiasi momento</p>
-            
+        <section class="jumbotron">
+            <div class="container-90">
+            <h1>Tutto ciò che ti serve per il lavoro,in un unico posto </h1>
+            <div class="jumbotron__info">
+                <div class="jumbotron__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vero optio distinctio officiis cumque odit at quibusdam corrupti nisi laborum, facilis qui molestiae veniam, deserunt fuga! Repellendus odio laboriosam nihil?</p>
+                     <a class="btn--blue" href="">Inizia la tua prova gratuita</a>
+                     <p>Annulla in qualsiasi momento</p>
+                     <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                <figure class="jumbotron__img">
+                    <img src="./img/assets-2/img/jumbo.png" alt="jumbo">
+                </figure>
             </div>
-            <div class="img__1">
-                <img class="jumbo" width="100%" src="./img/assets-2/img/jumbo.png" alt="jumbo">
+         </div> 
 
-            </div>
-           </div>
-        </div>
-          
-                    
         </section>
 
+
+        <div class="container-80">
+       <section id="plan">
+        <h2>Trova il piano buisness che fa per te</h2>
+       <div class="plan__circles">
+        <div class="plan__choice">
+            <div class="plan__circle plan__circle--check"></div>
+            <span>Fattura mensile</span>
+      </div>
+      <div class="plan__choice">
+        <div class="plan__circle"></div>
+        <span>Fattura annuale</span>
+  </div>
+  </div>
+       </section>
+      </div>
+
+      <section id="plan__cards">
+        <div class="plan__card">box</div>
+        <div class="plan__card">box</div>
+        <div class="plan__card">box</div>
+        <div class="plan__card">box</div>
+      </section>
 
 
 
