@@ -190,10 +190,82 @@ header nav > div ul a{
    
 }
 
-.contact__partner{
-    flex-basis: calc(100% - 2);
+#contact__partners > div{
+    display: flex;
+    gap: 10px;
 }
 
 .btn--white{
     border-color: 1px solid black;
+}
+
+#contact__partners figure img{
+    width: 100%;
+}
+
+.plan__card:last-child
+.plan__card--bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact__partner--60,
+.plan__card--bottom--60{
+    flex-basis: 60%;
+}
+
+.contact__partner--40,
+.plan__card--bottom--40{
+    flex-basis: 40%;
+}
+
+.plan__card--bottom .btn{
+    text-align: center;
+    align-items: flex-start;
+}
+
+.contact__partner--40{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+#operazioni-dropbox figure img {
+    width: 100%;
+}
+
+#operazioni-dropbox{
+    margin-top: 100px;
+}
+
+.operazioni-dropbox__cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.operazioni-dropbox__card{
+    flex-basis: calc(100% / 3 - 10px);
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+footer > div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+footer > div .footer__list{
+    flex-basis: calc(100% / 5 - 10px);
+    flex-grow: 1;
 }
